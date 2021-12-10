@@ -4,8 +4,6 @@ import Form from "./components/Form";
 import Counter from "./components/Counter";
 import Tasks from "./components/Tasks";
 
-// import initialTasks from "./components/data/tasks";
-
 import styled from "styled-components";
 
 const initialTasks = [
@@ -47,7 +45,7 @@ const HeaderDiv = styled.div`
 
   h2 {
     padding: 0.5em;
-    transition: 0.2s;
+    transition: 0.5s;
     border-radius: 50%;
 
     border: 0.2em solid #93c47d;
