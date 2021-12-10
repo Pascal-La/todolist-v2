@@ -47,7 +47,9 @@ const HeaderDiv = styled.div`
 
   h2 {
     padding: 0.5em;
+    transition: 0.2s;
     border-radius: 50%;
+
     border: 0.2em solid #93c47d;
 
     &:hover {
@@ -68,7 +70,8 @@ const HeaderDiv = styled.div`
 const TodoListDiv = styled.div`
   min-height: 100vh;
   padding: 3em 0.5em;
-  background-color: #93c47d;
+  /* background-color: #93c47d; */
+  background: linear-gradient(15deg, #16537e, #93c47d);
 
   @media (min-width: 769px) {
     padding: 5em 10em;

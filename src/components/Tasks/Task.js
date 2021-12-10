@@ -6,18 +6,23 @@ const TaskLi = styled.li`
   display: flex;
   margin: 0.5em 0;
   min-height: 4em;
+  user-select: none;
+  line-height: 1.2em;
   align-items: center;
   border-radius: 0.2em;
-  background-color: white;
+  background-color: #f2f2f2;
   justify-content: space-between;
 
   label {
+    flex-grow: 1;
     padding: 0.3em;
     max-width: 80%;
+    transition: 0.2s;
     word-break: break-word;
   }
 
   .label--done {
+    color: lightgrey;
     text-decoration: line-through;
   }
 
@@ -25,25 +30,28 @@ const TaskLi = styled.li`
     width: 100%;
     input {
       width: 95%;
+      border: none;
+      outline: none;
       padding: 0.5em;
       min-height: 2.5em;
+      background-color: #f2f2f2;
     }
   }
 
   .task_buttons-group {
     display: flex;
-    flex-wrap: no-wrap;
+    /* flex-wrap: nowrap; */
   }
 
   .task_button {
     width: 2em;
     height: 4em;
     display: flex;
+    color: #444444;
     cursor: pointer;
     font-size: large;
     transition: 0.25s;
     align-items: center;
-    border-radius: 0.2em;
     justify-content: center;
 
     &-check {
@@ -197,7 +205,9 @@ const Task = ({
             <div
               className="task_button task_button-delete"
               onClick={() => {
-                deleteTask(id);
+                if (window.confirm("Supprimer ?")) {
+                  deleteTask(id);
+                }
               }}
             >
               &#9249; &#8709;

@@ -11,13 +11,13 @@ const FormDiv = styled.div`
 
     input {
       width: 100%;
-      border-style: none;
-      background-color: #b6d7a8;
-
       padding: 1em;
+      outline: none;
+      color: #333333;
       min-height: 1em;
       font-size: x-large;
-      border-radius: 0.2em;
+      border-style: none;
+      background-color: #b6d7a870;
 
       @media (min-width: 769px) {
         min-height: 2em;
@@ -27,11 +27,11 @@ const FormDiv = styled.div`
     .submit-button {
       width: 3em;
       display: flex;
+      color: #333333;
       cursor: pointer;
       transition: 0.25s;
       font-size: x-large;
       align-items: center;
-      border-radius: 0.2em;
       justify-content: center;
       background-color: #674ea7;
 

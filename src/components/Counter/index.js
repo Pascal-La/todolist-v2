@@ -3,11 +3,11 @@ import React from "react";
 import styled from "styled-components";
 
 const CounterDiv = styled.div`
-  padding: 1em 0;
-  color: #303030;
-  font-size: large;
+  padding: 1.5em 0;
+  color: #444444;
+  font-size: larger;
   text-align: left;
-  border-bottom: 1px solid #303030;
+  border-bottom: 1px solid #444444;
 `;
 
 const Counter = ({ nbTasks }) => (
